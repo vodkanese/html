@@ -42,9 +42,13 @@
          <source src="pig.mp3.mp3" type="audio/mpeg"> s
        </audio>
    </ul>
-      
+      <script>
+      let stateCheck = setInterval(() => {
+  if (document.readyState === 'complete') {
+    clearInterval(stateCheck);
+    alert("text")
+  }
+}, 1000);
+      </script>
  </body>
-<script>
-   alert("text")
-</script>
  </html>
